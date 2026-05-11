@@ -95,29 +95,13 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
     columns: 3,
     members: [
       {
+        name: "Asama Temitope",
+        affiliation: "Researcher · ML Collective",
+      },
+      {
         name: "Ayodeji Adesegun",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/ayodeji.jpg",
-      },
-      {
-        name: "Iremide Oyelaja",
-        affiliation: "Independent Researcher",
-        image: "/assets/images/organizers/iremide.jpg",
-      },
-      {
-        name: "Shiloh Oni",
-        affiliation: "Independent Researcher",
-        image: "/assets/images/organizers/shiloh.jpg",
-      },
-      {
-        name: "Emmanuel Idoko",
-        affiliation: "ML Collective · University of Lagos",
-        image: "/assets/images/organizers/emmanuel.jpg",
-      },
-      {
-        name: "Yusuf Olaniyi",
-        affiliation: "Carnegie Mellon University, Africa",
-        image: "/assets/images/organizers/yusuf.jpg",
       },
       {
         name: "Chialuka Onuoha",
@@ -125,22 +109,38 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         image: "/assets/images/organizers/chialuka.jpg",
       },
       {
+        name: "Emmanuel Idoko",
+        affiliation: "ML Collective · University of Lagos",
+        image: "/assets/images/organizers/emmanuel.jpg",
+      },
+      {
         name: "Ibukun Oduntan",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/ibukun.png",
       },
       {
+        name: "Iremide Oyelaja",
+        affiliation: "Independent Researcher",
+        image: "/assets/images/organizers/iremide.jpg",
+      },
+      { name: "Kayode Makinde", affiliation: "\u2014" },
+      { name: "Kelechi Chibundu", affiliation: "ML Collective · FUNAAB" },
+      { name: "Nunsi Shaki", affiliation: "\u2014" },
+      {
         name: "Olamide Lawal",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/olamide.jpg",
       },
-      { name: "Kelechi Chibundu", affiliation: "ML Collective · FUNAAB" },
-      { name: "Nunsi Shaki", affiliation: "\u2014" },
       {
-        name: "Asama Temitope",
-        affiliation: "Researcher · ML Collective",
+        name: "Shiloh Oni",
+        affiliation: "Independent Researcher",
+        image: "/assets/images/organizers/shiloh.jpg",
       },
-      { name: "Kayode Makinde", affiliation: "\u2014" },
+      {
+        name: "Yusuf Olaniyi",
+        affiliation: "Carnegie Mellon University, Africa",
+        image: "/assets/images/organizers/yusuf.jpg",
+      },
     ],
   },
 ];
