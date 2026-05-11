@@ -97,6 +97,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
       {
         name: "Asama Temitope",
         affiliation: "Researcher · ML Collective",
+        image: "/assets/images/organizers/asama.jpg",
       },
       {
         name: "Ayodeji Adesegun",
