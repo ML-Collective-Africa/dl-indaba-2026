@@ -21,6 +21,25 @@ function calcTimeLeft(target: number): TimeLeft {
   return { d, h, m, s };
 }
 
+function CdItem({ num, label }: { num: string; label: string }) {
+  return (
+    <span className="flex flex-col items-center min-w-[44px]">
+      <span className="font-serif text-[30px] leading-none tracking-[-0.02em] text-ink tabular-nums">
+        {num}
+      </span>
+      <span className="font-mono text-[9px] tracking-[0.16em] uppercase text-muted mt-1.5">
+        {label}
+      </span>
+    </span>
+  );
+}
+
+function CdSep() {
+  return (
+    <span className="font-serif text-2xl text-muted-2 leading-none pb-[18px]">:</span>
+  );
+}
+
 export function Countdown() {
   const target = WORKSHOP_EVENT.targetDate.getTime();
   const [mounted, setMounted] = useState(false);
@@ -33,70 +52,34 @@ export function Countdown() {
     return () => clearInterval(id);
   }, [target]);
 
-  if (!mounted) {
-    return (
-      <div className="countdown inline-flex items-end gap-2.5 mx-auto my-2.5 px-5 py-3 border border-rule bg-paper-2">
-        <Placeholder />
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className="countdown inline-flex items-end gap-2.5 mx-auto my-2.5 px-5 py-3 border border-rule bg-paper-2"
-      aria-label="Time until workshop"
-    >
-      <LiveCountdown time={time} />
-    </div>
-  );
-}
-
-function Placeholder() {
-  const labels = ["Days", "Hours", "Minutes", "Seconds"];
-  return (
-    <>
-      {labels.map((label, i) => (
-        <span key={label} className="flex justify-center items-center min-w-[60px]">
-          <span className="font-serif text-[30px] leading-none tracking-[-0.02em] text-ink tabular-nums">
-            --
-          </span>
-          <span className="font-mono text-[9px] tracking-[0.16em] uppercase text-muted mt-1.5">
-            {label}
-          </span>
-          {i < labels.length - 1 && (
-            <span className="font-serif text-2xl text-muted-2 leading-none pb-[18px]">:</span>
-          )}
-        </span>
-      ))}
-    </>
-  );
-}
-
-function LiveCountdown({ time }: { time: TimeLeft }) {
-  const items: { value: number; label: string }[] = [
-    { value: time.d, label: "Days" },
-    { value: time.h, label: "Hours" },
-    { value: time.m, label: "Minutes" },
-    { value: time.s, label: "Seconds" },
-  ];
-
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
-    <>
-      {items.map((item, i) => (
-        <span key={item.label} className="flex flex-col items-center min-w-[44px]">
-          <span className="font-serif text-[30px] leading-none tracking-[-0.02em] text-ink tabular-nums">
-            {pad(item.value)}
-          </span>
-          <span className="font-mono text-[9px] tracking-[0.16em] uppercase text-muted mt-1.5">
-            {item.label}
-          </span>
-          {i < items.length - 1 && (
-            <span className="font-serif text-2xl text-muted-2 leading-none pb-[18px]">:</span>
-          )}
-        </span>
-      ))}
-    </>
+    <div
+      className="inline-flex items-end gap-2.5 mx-auto my-2.5 px-5 py-3 border border-rule bg-paper-2"
+      aria-label="Time until workshop"
+    >
+      {mounted ? (
+        <>
+          <CdItem num={pad(time.d)} label="Days" />
+          <CdSep />
+          <CdItem num={pad(time.h)} label="Hours" />
+          <CdSep />
+          <CdItem num={pad(time.m)} label="Minutes" />
+          <CdSep />
+          <CdItem num={pad(time.s)} label="Seconds" />
+        </>
+      ) : (
+        <>
+          <CdItem num="--" label="Days" />
+          <CdSep />
+          <CdItem num="--" label="Hours" />
+          <CdSep />
+          <CdItem num="--" label="Minutes" />
+          <CdSep />
+          <CdItem num="--" label="Seconds" />
+        </>
+      )}
+    </div>
   );
 }

@@ -11,7 +11,7 @@ export default function SponsorsPage() {
     <>
       <PageHeader
         title="Sponsor our workshop"
-        lede="Sponsors help fund participant travel, materials, and the publication of the post-session preprint as a public artifact of the conversation."
+        subtitle="Sponsors help fund participant travel, materials, and the publication of the post-session preprint as a public artifact of the conversation."
       />
 
       <section>

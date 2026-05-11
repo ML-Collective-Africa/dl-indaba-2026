@@ -8,12 +8,13 @@ export function Nav() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b border-rule bg-paper/92 sticky top-0 z-30 backdrop-blur-sm">
-      <ul className="container-site flex gap-0 list-none m-0 font-sans text-sm overflow-x-auto">
+    <nav className="border-b border-rule bg-paper/92 sticky top-0 z-30 backdrop-blur flex items-center justify-around">
+      <ul className="flex gap-0 list-none m-0 font-sans text-sm overflow-x-auto">
         {NAV_ITEMS.map((item) => {
-          const isActive = item.href === "/"
-            ? pathname === "/"
-            : pathname.startsWith(item.href);
+          const isActive =
+            item.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(item.href);
 
           return (
             <li key={item.href} className="flex-none">
@@ -31,6 +32,7 @@ export function Nav() {
           );
         })}
       </ul>
+      <div></div> {/* flex hack to center the nav items */}
     </nav>
   );
 }

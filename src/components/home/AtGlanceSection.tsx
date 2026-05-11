@@ -12,7 +12,7 @@ export function AtGlanceSection() {
   return (
     <section>
       <div className="container-site">
-        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-ink border-b border-rule">
+        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-b border-t-ink border-b-rule">
           {items.map((item) => (
             <div
               key={item.key}

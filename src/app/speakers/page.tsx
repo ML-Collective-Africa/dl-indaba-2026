@@ -12,7 +12,7 @@ export default function SpeakersPage() {
     <>
       <PageHeader
         title="Speakers"
-        lede="Here is the list of speakers who will share their insights on agentic AI in Africa."
+        subtitle="Here is the list of speakers who will share their insights on agentic AI in Africa."
       />
 
       <section>
