@@ -16,7 +16,7 @@ export function SponsorInquiryCard() {
       </div>
       <div className="flex items-center justify-center min-h-full">
         <div className="flex flex-col gap-3 items-stretch w-[220px] max-w-full">
-          <Button href="mailto:owodunniabraham@gmail.com" className="justify-between w-full">
+          <Button href="mailto:abraham.owodunni@mlcollective.org" className="justify-between w-full">
             Email us <span className="arrow">→</span>
           </Button>
           <Button href="#" variant="ghost" className="justify-between w-full" target="_blank" rel="noopener">
