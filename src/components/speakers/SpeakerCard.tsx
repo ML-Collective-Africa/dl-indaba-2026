@@ -1,5 +1,6 @@
 import { PortraitPlaceholder } from "@/components/ui/PortraitPlaceholder";
 import type { Speaker } from "@/lib/data";
+import { asset } from "@/lib/path";
 
 interface SpeakerCardProps {
   speaker: Speaker;
@@ -25,7 +26,7 @@ export function SpeakerCard({ speaker }: SpeakerCardProps) {
     <article className="flex flex-col items-center text-center">
       {speaker.image ? (
         <img
-          src={speaker.image}
+          src={asset(speaker.image)}
           alt={speaker.name}
           className="mb-[18px] w-[200px] max-w-full aspect-square rounded-full object-cover"
         />

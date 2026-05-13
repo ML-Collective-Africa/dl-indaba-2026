@@ -4,6 +4,7 @@ import "./globals.css";
 import { Masthead } from "@/components/layout/Masthead";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import { asset } from "@/lib/path";
 
 const serif = Source_Serif_4({
   variable: "--font-serif",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   title: "Whose Intelligence? — Building Agentic AI in Africa · DLI 2026",
   description:
     "Building Agentic AI in Africa without frontier-model dependency. A workshop at Deep Learning Indaba 2026, hosted by ML Collective.",
-  icons: { icon: "/mlc.svg" },
+  icons: { icon: asset("/mlc.svg") },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

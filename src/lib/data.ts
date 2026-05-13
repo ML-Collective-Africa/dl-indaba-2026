@@ -52,13 +52,13 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Chisom Chibuike",
         affiliation: "ML Collective · University of Nigeria",
         image: "/assets/images/organizers/chisom.png",
-        linkedin: "https://www.linkedin.com/in/chisom-chibuike-/",
+        website: "https://sites.google.com/view/chisom-chibuike",
       },
       {
         name: "Ifihanagbara Olusheye",
         affiliation: "University of the Witwatersrand",
         image: "/assets/images/organizers/ifihan.jpg",
-        linkedin: "https://www.linkedin.com/in/ifihan-olusheye/",
+        website: "https://ifihan.com/",
       },
       {
         name: "Honour-Jesus Bezaleel",
@@ -78,7 +78,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Busayo Awobade",
         affiliation: "Intron Health",
         image: "/assets/images/organizers/busayo.jpeg",
-        linkedin: "https://www.linkedin.com/in/busayo-awobade-107a94175/",
+        website: "https://iambusayor.github.io",
       },
       {
         name: "Fatimo Adebanjo",
@@ -108,7 +108,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Mardiyyah Oduwole",
         affiliation: "ML Collective",
         image: "/assets/images/organizers/mardiyyah.jpeg",
-        linkedin: "https://www.linkedin.com/in/mardiyyah-oduwole/"
+        website: "http://mardiyyahoduwole.com/"
       },
     ],
   },
@@ -145,7 +145,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Ayodeji Adesegun",
         affiliation: "Researcher · ML Collective",
         image: "/assets/images/organizers/ayodeji.jpg",
-        linkedin: "https://www.linkedin.com/in/ayodejiades/",
+        website: "https://ayodeji.tech",
       },
       {
         name: "Chialuka Onuoha",
