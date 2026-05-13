@@ -7,6 +7,21 @@ interface PersonCardProps {
 }
 
 export function PersonCard({ person }: PersonCardProps) {
+  const profileUrl = person.linkedin || person.website;
+
+  const nameEl = profileUrl ? (
+    <a
+      href={profileUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-inherit hover:text-purple transition-colors duration-200 no-underline hover:underline"
+    >
+      {person.name}
+    </a>
+  ) : (
+    person.name
+  );
+
   return (
     <article className="flex flex-col items-center text-center">
       {person.image ? (
@@ -18,7 +33,7 @@ export function PersonCard({ person }: PersonCardProps) {
       ) : (
         <PortraitPlaceholder className="mb-4 w-[180px] max-w-full aspect-square rounded-full" />
       )}
-      <h3 className="font-serif text-xl tracking-[-0.01em] leading-snug m-1 mb-1.5 font-normal">{person.name}</h3>
+      <h3 className="font-serif text-xl tracking-[-0.01em] leading-snug m-1 mb-1.5 font-normal">{nameEl}</h3>
       <p className="m-0 text-[13px] text-muted leading-relaxed">{person.affiliation}</p>
     </article>
   );

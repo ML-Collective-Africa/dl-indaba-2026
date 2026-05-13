@@ -6,6 +6,21 @@ interface SpeakerCardProps {
 }
 
 export function SpeakerCard({ speaker }: SpeakerCardProps) {
+  const profileUrl = speaker.linkedin || speaker.website;
+
+  const nameEl = profileUrl ? (
+    <a
+      href={profileUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-inherit hover:text-purple transition-colors duration-200 no-underline hover:underline"
+    >
+      {speaker.name}
+    </a>
+  ) : (
+    speaker.name
+  );
+
   return (
     <article className="flex flex-col items-center text-center">
       {speaker.image ? (
@@ -17,7 +32,7 @@ export function SpeakerCard({ speaker }: SpeakerCardProps) {
       ) : (
         <PortraitPlaceholder className="mb-[18px] w-[200px] max-w-full aspect-square rounded-full" />
       )}
-      <h3 className="font-serif text-[22px] leading-tight tracking-[-0.01em] m-1 mb-1.5 font-normal">{speaker.name}</h3>
+      <h3 className="font-serif text-[22px] leading-tight tracking-[-0.01em] m-1 mb-1.5 font-normal">{nameEl}</h3>
       <p className="m-0 text-sm text-muted leading-relaxed">{speaker.affiliation}</p>
     </article>
   );

@@ -15,6 +15,8 @@ export interface Speaker {
   name: string;
   affiliation: string;
   image?: string;
+  linkedin?: string;
+  website?: string;
 }
 
 export const SPEAKERS: Speaker[] = [
@@ -30,6 +32,8 @@ export interface Person {
   name: string;
   affiliation: string;
   image?: string;
+  linkedin?: string;
+  website?: string;
 }
 
 export interface PersonGroup {
@@ -47,16 +51,21 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
       {
         name: "Chisom Chibuike",
         affiliation: "ML Collective · University of Nigeria",
+        image: "/assets/images/organizers/chisom.png",
+        linkedin: "https://www.linkedin.com/in/chisom-chibuike-/",
       },
       {
         name: "Ifihanagbara Olusheye",
         affiliation: "University of the Witwatersrand",
         image: "/assets/images/organizers/ifihan.jpg",
+        linkedin: "https://www.linkedin.com/in/ifihan-olusheye/",
       },
       {
         name: "Honour-Jesus Bezaleel",
         affiliation: "ML Collective · Ekiti State University",
         image: "/assets/images/organizers/honour-jesus.jpg",
+        linkedin: "https://www.linkedin.com/in/honour-jesus-bezaleel/",
+
       },
     ],
   },
@@ -65,8 +74,18 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
     columns: 2,
     background: true,
     members: [
-      { name: "Busayo Awobade", affiliation: "Intron Health" },
-      { name: "Fatimo Adebanjo", affiliation: "ML Collective" },
+      {
+        name: "Busayo Awobade",
+        affiliation: "Intron Health",
+        image: "/assets/images/organizers/busayo.jpeg",
+        linkedin: "https://www.linkedin.com/in/busayo-awobade-107a94175/",
+      },
+      {
+        name: "Fatimo Adebanjo",
+        affiliation: "ML Collective",
+        image: "/assets/images/organizers/fatimo.jpeg",
+        linkedin: "https://www.linkedin.com/in/fatimo-adebanjo/",
+      },
     ],
   },
   {
@@ -76,9 +95,21 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
       {
         name: "Steven Kolawole",
         affiliation: "Carnegie Mellon University · Amazon Bedrock",
+        image: "/assets/images/organizers/steven.png",
+        website: "https://stevenkolawole.github.io/"
       },
-      { name: "Abraham Owodunni", affiliation: "Ohio State University" },
-      { name: "Mardiyyah Oduwole", affiliation: "ML Collective" },
+      {
+        name: "Abraham Owodunni",
+        affiliation: "Ohio State University",
+        image: "/assets/images/organizers/abraham.jpg",
+        website: "https://owos.github.io/",
+      },
+      {
+        name: "Mardiyyah Oduwole",
+        affiliation: "ML Collective",
+        image: "/assets/images/organizers/mardiyyah.jpeg",
+        linkedin: "https://www.linkedin.com/in/mardiyyah-oduwole/"
+      },
     ],
   },
   {
@@ -86,8 +117,18 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
     columns: 2,
     background: true,
     members: [
-      { name: "Rosanne Liu", affiliation: "Google DeepMind" },
-      { name: "Jason Yosinski", affiliation: "OpenAI" },
+      {
+        name: "Rosanne Liu",
+        affiliation: "Google DeepMind",
+        image: "/assets/images/organizers/rosanne.jpg",
+        website: "https://rosanneliu.com/"
+      },
+      {
+        name: "Jason Yosinski",
+        affiliation: "OpenAI",
+        image: "/assets/images/organizers/jason.png",
+        website: "https://yosinski.com/",
+      },
     ],
   },
   {
@@ -98,49 +139,73 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Asama Temitope",
         affiliation: "Researcher · ML Collective",
         image: "/assets/images/organizers/asama.jpg",
+        linkedin: "https://www.linkedin.com/in/temitopeasama/"
       },
       {
         name: "Ayodeji Adesegun",
-        affiliation: "Independent Researcher",
+        affiliation: "Researcher · ML Collective",
         image: "/assets/images/organizers/ayodeji.jpg",
+        linkedin: "https://www.linkedin.com/in/ayodejiades/",
       },
       {
         name: "Chialuka Onuoha",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/chialuka.jpg",
+        linkedin: "https://www.linkedin.com/in/chialuka-prisca-mary-onuoha-630205229/"
       },
       {
         name: "Emmanuel Idoko",
         affiliation: "ML Collective · University of Lagos",
         image: "/assets/images/organizers/emmanuel.jpg",
+        linkedin: "https://www.linkedin.com/in/emmanuelidoko/"
       },
       {
         name: "Ibukun Oduntan",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/ibukun.png",
+        linkedin: "https://www.linkedin.com/in/ibukun-d-oduntan/"
       },
       {
         name: "Iremide Oyelaja",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/iremide.jpg",
+        linkedin: "https://www.linkedin.com/in/oyelajairemide/"
       },
-      { name: "Kayode Makinde", affiliation: "\u2014" },
-      { name: "Kelechi Chibundu", affiliation: "ML Collective · FUNAAB" },
-      { name: "Nunsi Shaki", affiliation: "\u2014" },
+      {
+        name: "Kayode Makinde",
+        affiliation: "\u2014",
+        image: "/assets/images/organizers/kayode.jpeg",
+        linkedin: "https://www.linkedin.com/in/kayode-makinde-4b0b491ba/",
+      },
+      {
+        name: "Kelechi Chibundu",
+        affiliation: "ML Collective · FUNAAB",
+        image: "/assets/images/organizers/kelechi.jpeg",
+        linkedin: "https://www.linkedin.com/in/kelechichibundu/",
+      },
+      {
+        name: "Nunsi Shaki",
+        affiliation: "\u2014",
+        image: "/assets/images/organizers/nunsi.jpeg",
+        linkedin: "https://www.linkedin.com/in/nunsi-shiaki/"
+      },
       {
         name: "Olamide Lawal",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/olamide.jpg",
+        linkedin: "https://www.linkedin.com/in/olamide--lawal/"
       },
       {
         name: "Shiloh Oni",
         affiliation: "Independent Researcher",
         image: "/assets/images/organizers/shiloh.jpg",
+        linkedin: "https://www.linkedin.com/in/adebisi-oni-2a6aa83b8/"
       },
       {
         name: "Yusuf Olaniyi",
         affiliation: "Carnegie Mellon University, Africa",
         image: "/assets/images/organizers/yusuf.jpg",
+        linkedin: "https://www.linkedin.com/in/yusuf-olaniyi/"
       },
     ],
   },
