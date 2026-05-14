@@ -1,4 +1,5 @@
 import { type ButtonHTMLAttributes, type AnchorHTMLAttributes } from "react";
+import Link from "next/link";
 
 type Variant = "solid" | "ghost";
 
@@ -25,6 +26,14 @@ export function Button(props: ButtonProps) {
 
   if ("href" in rest && rest.href !== undefined) {
     const { href, ...anchorRest } = rest as AnchorHTMLAttributes<HTMLAnchorElement> & { href: string; variant?: Variant };
+    const isInternal = href.startsWith("/");
+    if (isInternal) {
+      return (
+        <Link href={href} className={cls} {...(anchorRest as object)}>
+          {anchorRest.children}
+        </Link>
+      );
+    }
     return (
       <a href={href} className={cls} {...anchorRest}>
         {anchorRest.children}
