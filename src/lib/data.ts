@@ -71,7 +71,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
   },
   {
     title: "Organizers",
-    columns: 2,
+    columns: 3,
     background: true,
     members: [
       {
@@ -85,6 +85,12 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         affiliation: "ML Collective",
         image: "/assets/images/organizers/fatimo.jpeg",
         linkedin: "https://www.linkedin.com/in/fatimo-adebanjo/",
+      },
+      {
+        name: "Prince Mireku",
+        affiliation: "Ashesi University · Google Research Africa · ML Collective",
+        image: "/assets/images/organizers/prince.jpg",
+        linkedin: "https://www.linkedin.com/in/prince-mireku-2a318b203/",
       },
     ],
   },
