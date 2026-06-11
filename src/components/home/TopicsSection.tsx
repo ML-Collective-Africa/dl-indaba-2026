@@ -59,7 +59,7 @@ export function TopicsSection() {
           ))}
         </div>
 
-        <p className="text-[15px] text-muted leading-relaxed mt-8 max-w-[760px] mx-auto max-w-none">
+        <p className="text-[15px] text-muted leading-relaxed mt-8 max-w-[760px] mx-auto">
           This session does not pretend to resolve these tensions. It convenes researchers, practitioners, and
           policymakers to pressure-test them — to argue openly, rigorously, and without deference to the hype.
         </p>
