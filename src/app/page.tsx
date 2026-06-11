@@ -1,13 +1,15 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { AbstractSection } from "@/components/home/AbstractSection";
-import { AtGlanceSection } from "@/components/home/AtGlanceSection";
+import { TopicsSection } from "@/components/home/TopicsSection";
+import { ActivitiesSection } from "@/components/home/ActivitiesSection";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <AbstractSection />
-      <AtGlanceSection />
+      <TopicsSection />
+      <ActivitiesSection />
     </>
   );
 }
