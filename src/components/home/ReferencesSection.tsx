@@ -2,18 +2,13 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const references = [
   {
-    title: "Africa's Digital Leap: Cloud, Connectivity & AI in the Next Decade",
-    href: "https://storage.ghost.io/c/44/95/449506ca-034e-480f-9725-fcde08ef1cc1/content/files/2025/11/Africa---s-Digital-Leap--Cloud--Connectivity---AI-in-the-Next-Decade.pdf",
-    label: "PDF",
-  },
-  {
-    title: "Toward an African Agenda for AI Safety (2025)",
+    title: "Toward an African Agenda for AI Safety (2025) — covers agentic models and economic risk for Africa",
     href: "https://arxiv.org/pdf/2508.13179",
     label: "arXiv",
   },
   {
     title: "How Agentic AI Is Transforming African Banking — Oliver Wyman (2025)",
-    href: "https://www.oliverwyman.com/our-expertise/insights/2025/apr/agentic-ai-transforming-african-banking-html",
+    href: "https://www.oliverwyman.com/our-expertise/insights/2025/apr/agentic-ai-transforming-african-banking-opportunities-risks.html",
     label: "Oliver Wyman",
   },
   {
