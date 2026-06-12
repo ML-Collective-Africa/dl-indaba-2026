@@ -3,6 +3,7 @@ import { AbstractSection } from "@/components/home/AbstractSection";
 import { TopicsSection } from "@/components/home/TopicsSection";
 import { ActivitiesSection } from "@/components/home/ActivitiesSection";
 import { WorkshopChallengeSection } from "@/components/home/WorkshopChallengeSection";
+import { ReferencesSection } from "@/components/home/ReferencesSection";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <TopicsSection />
       <ActivitiesSection />
       <WorkshopChallengeSection />
+      <ReferencesSection />
     </>
   );
 }
