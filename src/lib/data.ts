@@ -20,12 +20,33 @@ export interface Speaker {
 }
 
 export const SPEAKERS: Speaker[] = [
-  { name: "Chris Emezue", affiliation: "Lanfrica · Mila" },
-  { name: "Jason Yosinski", affiliation: "OpenAI · ML Collective" },
-  { name: "Rosanne Liu", affiliation: "Google DeepMind · ML Collective" },
-  { name: "Jade Abbott", affiliation: "Lelapa AI" },
-  { name: "Tobi Olatunji", affiliation: "Intron AI" },
-  { name: "Benjamin Rosman", affiliation: "University of the Witwatersrand" },
+  {
+    name: "Chinasa T. Okolo",
+    affiliation: "Founder and Scientific Director, Technecultura",
+    image: "/assets/images/organizers/chinasa.png",
+    linkedin: "https://www.linkedin.com/in/chinasatokolo/",
+  },
+  {
+    name: "Tobi Olatunji",
+    affiliation: "Founder, Intron Health",
+    image: "/assets/images/organizers/tobi.jpeg",
+    linkedin: "https://www.linkedin.com/in/tobi-olatunji-md",
+  },
+  {
+    name: "Ayomide Odumankinde",
+    affiliation: "Member of Technical Staff, Cohere",
+    linkedin: "https://www.linkedin.com/in/ayoodumak/",
+  },
+  {
+    name: "Chris Emezue",
+    affiliation: "",
+    linkedin: "https://www.linkedin.com/in/chrisemezue/",
+  },
+  {
+    name: "Sara Luger",
+    affiliation: "",
+    linkedin: "https://www.linkedin.com/in/sarahluger/",
+  },
 ];
 
 export interface Person {
