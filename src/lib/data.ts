@@ -23,13 +23,13 @@ export const SPEAKERS: Speaker[] = [
   {
     name: "Chinasa T. Okolo",
     affiliation: "Founder and Scientific Director, Technecultura",
-    image: "/assets/images/organizers/chinasa.png",
-    linkedin: "https://www.linkedin.com/in/chinasatokolo/",
+    image: "/assets/images/speakers/chinasa.png",
+    website: "https://www.chinasatokolo.com/",
   },
   {
     name: "Tobi Olatunji",
     affiliation: "Founder, Intron Health",
-    image: "/assets/images/organizers/tobi.jpeg",
+    image: "/assets/images/speakers/tobi.jpeg",
     linkedin: "https://www.linkedin.com/in/tobi-olatunji-md",
   },
   {
@@ -39,13 +39,13 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     name: "Chris Emezue",
-    affiliation: "",
-    linkedin: "https://www.linkedin.com/in/chrisemezue/",
+    affiliation: "LanAfrica / Mila Quebec AI Institute",
+    image: "/assets/images/speakers/chris.png",
+    website: "https://chrisemezue.github.io/",
   },
   {
-    name: "Sara Luger",
+    name: "Coming soon",
     affiliation: "",
-    linkedin: "https://www.linkedin.com/in/sarahluger/",
   },
 ];
 
@@ -102,10 +102,10 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         website: "https://iambusayor.github.io",
       },
       {
-        name: "Fatimo Adebanjo",
-        affiliation: "ML Collective",
-        image: "/assets/images/organizers/fatimo.jpeg",
-        linkedin: "https://www.linkedin.com/in/fatimo-adebanjo/",
+        name: "Chialuka Onuoha",
+        affiliation: "Independent Researcher",
+        image: "/assets/images/organizers/chialuka.jpg",
+        linkedin: "https://www.linkedin.com/in/chialuka-prisca-mary-onuoha-630205229/",
       },
       {
         name: "Prince Mireku",
@@ -175,10 +175,10 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         website: "https://ayodeji.tech",
       },
       {
-        name: "Chialuka Onuoha",
-        affiliation: "Independent Researcher",
-        image: "/assets/images/organizers/chialuka.jpg",
-        linkedin: "https://www.linkedin.com/in/chialuka-prisca-mary-onuoha-630205229/"
+        name: "Fatimo Adebanjo",
+        affiliation: "ML Collective",
+        image: "/assets/images/organizers/fatimo.jpeg",
+        linkedin: "https://www.linkedin.com/in/fatimo-adebanjo/",
       },
       {
         name: "Emmanuel Idoko",
