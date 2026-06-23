@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Countdown } from "./Countdown";
 import { WORKSHOP_EVENT } from "@/lib/data";
+import { asset } from "@/lib/path";
 
 const glanceItems: { key: string; value: string; href?: string }[] = [
   { key: "Format", value: WORKSHOP_EVENT.format },
@@ -35,7 +36,7 @@ export function HeroSection() {
 
       <div className="container-site mt-12 mb-0">
         <img
-          src="/assets/lagos.jpg"
+          src={asset("/assets/lagos.jpg")}
           alt="Lagos, Nigeria"
           className="w-full h-[320px] md:h-[460px] object-cover"
         />
