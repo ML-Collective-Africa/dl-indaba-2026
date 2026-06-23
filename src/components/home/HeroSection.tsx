@@ -33,7 +33,15 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="container-site mt-12 pb-0">
+      <div className="container-site mt-12 mb-0">
+        <img
+          src="/assets/lagos.jpg"
+          alt="Lagos, Nigeria"
+          className="w-full h-[320px] md:h-[460px] object-cover"
+        />
+      </div>
+
+      <div className="container-site mt-0 pb-0">
         <div className="grid grid-cols-2 md:grid-cols-5 border-t border-b border-t-ink border-b-rule">
           {glanceItems.map((item) => (
             <div
