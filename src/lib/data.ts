@@ -133,7 +133,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
       },
       {
         name: "Mardiyyah Oduwole",
-        affiliation: "ML Collective",
+        affiliation: "University of Bristol · Avolution",
         image: "/assets/images/organizers/mardiyyah.jpeg",
         website: "http://mardiyyahoduwole.com/"
       },
