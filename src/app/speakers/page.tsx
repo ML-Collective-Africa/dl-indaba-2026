@@ -5,7 +5,7 @@ import { asset } from "@/lib/path";
 import type { Speaker } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Speakers — Whose Intelligence?",
+  title: "Panelists — Whose Intelligence?",
 };
 
 function SpeakerCard({ speaker }: { speaker: Speaker }) {
@@ -55,7 +55,7 @@ export default function SpeakersPage() {
 
   return (
     <>
-      <PageHeader title="Speakers" />
+      <PageHeader title="Panelists" />
 
       <section>
         <div className="container-site">

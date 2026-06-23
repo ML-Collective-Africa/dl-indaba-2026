@@ -6,7 +6,7 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/schedule", label: "Schedule" },
-  { href: "/speakers", label: "Speakers" },
+  { href: "/speakers", label: "Panelists" },
   { href: "/organizers", label: "Organizers" },
   { href: "/sponsors", label: "Sponsors" },
 ];
@@ -239,7 +239,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
 ];
 
 export const WORKSHOP_EVENT = {
-  targetDate: new Date("2026-08-06T09:00:00+02:00"),
+  targetDate: new Date("2026-08-07T12:00:00+01:00"),
   format: "Forums & Dialogues",
   length: "90 minutes",
   venue: "DLI 2026",
