@@ -28,7 +28,7 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     name: "Tobi Olatunji",
-    affiliation: "Founder, Intron Health",
+    affiliation: "Founder, Intron",
     image: "/assets/images/speakers/tobi.jpeg",
     linkedin: "https://www.linkedin.com/in/tobi-olatunji-md",
   },
@@ -97,7 +97,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
     members: [
       {
         name: "Busayo Awobade",
-        affiliation: "Intron Health",
+        affiliation: "Intron",
         image: "/assets/images/organizers/busayo.jpeg",
         website: "https://iambusayor.github.io",
       },
