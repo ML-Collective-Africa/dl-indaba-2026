@@ -39,7 +39,7 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     name: "Chris Emezue",
-    affiliation: "LanAfrica / Mila Quebec AI Institute",
+    affiliation: "LanAfrica Labs / Mila Quebec AI Institute",
     image: "/assets/images/speakers/chris.png",
     website: "https://chrisemezue.github.io/",
   },
