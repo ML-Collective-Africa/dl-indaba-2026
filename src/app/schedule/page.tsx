@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
+import { SCHEDULE } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Schedule — Whose Intelligence?",
@@ -12,14 +13,24 @@ export default function SchedulePage() {
 
       <section>
         <div className="container-site">
-          <div className="text-center py-20 px-6 border border-rule bg-paper-2">
-            <h2 className="font-serif text-[clamp(28px,3.4vw,44px)] leading-snug tracking-[-0.015em] mx-auto max-w-[18ch] m-0 mb-4 font-normal">
-              Coming soon!!!
-            </h2>
-            <p className="text-muted max-w-[42ch] mx-auto text-[15px]">
-              To be updated soon. Join ML Collective community for feedback.
-            </p>
-          </div>
+          <ul className="list-none flex flex-col max-w-[820px]">
+            {SCHEDULE.map((item, i) => (
+              <li
+                key={i}
+                className="flex flex-col sm:flex-row gap-2 sm:gap-6 py-5 border-b border-rule"
+              >
+                <span className="font-mono text-[13px] tracking-[0.08em] uppercase text-purple shrink-0 w-44 mt-[3px]">
+                  {item.time}
+                </span>
+                <div className="flex flex-col gap-2">
+                  <span className="text-[18px] font-medium text-ink leading-relaxed">{item.title}</span>
+                  {item.note && (
+                    <span className="text-[16px] italic text-muted leading-relaxed max-w-[52ch]">{item.note}</span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </>

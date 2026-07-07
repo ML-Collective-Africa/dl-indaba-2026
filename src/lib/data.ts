@@ -35,6 +35,7 @@ export const SPEAKERS: Speaker[] = [
   {
     name: "Ayomide Odumankinde",
     affiliation: "Member of Technical Staff, Cohere",
+    image: "/assets/images/speakers/ayo.jpeg",
     linkedin: "https://www.linkedin.com/in/ayoodumak/",
   },
   {
@@ -44,8 +45,10 @@ export const SPEAKERS: Speaker[] = [
     website: "https://chrisemezue.github.io/",
   },
   {
-    name: "Coming soon",
-    affiliation: "",
+    name: "Ayantola Alayande",
+    affiliation: "Researcher, Global Center on AI Governance (GCG)",
+    image: "/assets/images/speakers/ayantala.jpeg",
+    website: "https://www.globalcenter.ai/about/ayantola-alayande",
   },
 ];
 
@@ -235,6 +238,42 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         linkedin: "https://www.linkedin.com/in/yusuf-olaniyi/"
       },
     ],
+  },
+];
+
+export interface ScheduleItem {
+  time: string;
+  title: string;
+  note?: string;
+}
+
+export const SCHEDULE: ScheduleItem[] = [
+  {
+    time: "12:00 – 12:05 pm",
+    title: "Arrival of Attendees",
+  },
+  {
+    time: "12:05 – 12:15 pm",
+    title: "Workshop Introduction",
+    note: "Opening of the workshop and introduction of the panelists.",
+  },
+  {
+    time: "12:15 – 1:00 pm",
+    title: "Panelist Session — Whose Intelligence? Building Agentic AI in Africa without frontier model dependency",
+    note: "Panelists explore how agentic AI can be built for African realities without depending on frontier models, drawing on their areas of expertise. Panelists: Chinasa T. Okolo, Tobi Olatunji, Ayomide Odumankinde, Chris Emezue, and Ayantola Alayande.",
+  },
+  {
+    time: "1:00 – 1:20 pm",
+    title: "Fishbowl Round Table Discussion (participants vs panelists)",
+    note: "Participants will engage with panelists based on the debates arising from the 4 frameworks discussed. Each table has a focused theme from the 4 concerned frameworks, offering participants the opportunity to engage directly with the panelists.",
+  },
+  {
+    time: "1:20 – 1:25 pm",
+    title: "Extra Q&A",
+  },
+  {
+    time: "1:25 – 1:30 pm",
+    title: "Closing",
   },
 ];
 
