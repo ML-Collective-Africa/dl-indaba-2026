@@ -50,32 +50,17 @@ function SpeakerCard({ speaker }: { speaker: Speaker }) {
 }
 
 export default function SpeakersPage() {
-  const row1 = SPEAKERS.slice(0, 3);
-  const row2 = SPEAKERS.slice(3);
-
   return (
     <>
       <PageHeader title="Panelists" />
 
       <section>
         <div className="container-site">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-16 mb-16">
-            {row1.map((s, i) => (
-              <div key={s.name} className={i === 2 ? "col-span-2 sm:col-span-1 flex justify-center" : ""}>
-                <div className={i === 2 ? "w-full max-w-[200px] sm:max-w-none" : ""}>
-                  <SpeakerCard speaker={s} />
-                </div>
-              </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-12 gap-y-16 justify-items-center max-w-[820px] mx-auto">
+            {SPEAKERS.map((s) => (
+              <SpeakerCard key={s.name} speaker={s} />
             ))}
           </div>
-
-          {row2.length > 0 && (
-            <div className="grid grid-cols-2 gap-x-10 gap-y-16 max-w-[520px] mx-auto">
-              {row2.map((s) => (
-                <SpeakerCard key={s.name} speaker={s} />
-              ))}
-            </div>
-          )}
         </div>
       </section>
     </>

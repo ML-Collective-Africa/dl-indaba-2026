@@ -50,6 +50,10 @@ export const SPEAKERS: Speaker[] = [
     image: "/assets/images/speakers/ayantala.jpeg",
     website: "https://www.globalcenter.ai/about/ayantola-alayande",
   },
+  {
+    name: "Sarah Luger",
+    affiliation: "Coming soon",
+  },
 ];
 
 export interface Person {
@@ -125,7 +129,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
       {
         name: "Steven Kolawole",
         affiliation: "Carnegie Mellon University · Amazon Bedrock",
-        image: "/assets/images/organizers/steven.png",
+        image: "/assets/images/organizers/steven.jpeg",
         website: "https://stevenkolawole.github.io/"
       },
       {

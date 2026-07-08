@@ -10,6 +10,7 @@ const sponsors: Sponsor[] = [
   {
     name: "Adaption Labs",
     logo: "/assets/images/sponsors/adaption-labs.png",
+    href: "https://adaptionlabs.ai/",
   },
 ];
 
