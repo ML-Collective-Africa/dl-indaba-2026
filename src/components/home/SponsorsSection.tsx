@@ -1,4 +1,5 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import { asset } from "@/lib/path";
 
 interface Sponsor {
   name: string;
@@ -25,7 +26,7 @@ export function SponsorsSection({ plain = false }: { plain?: boolean }) {
             {sponsors.map((s, i) => {
               const logo = (
                 <img
-                  src={s.logo}
+                  src={asset(s.logo)}
                   alt={s.name}
                   className="h-9 w-auto object-contain opacity-90 transition-opacity hover:opacity-100"
                 />

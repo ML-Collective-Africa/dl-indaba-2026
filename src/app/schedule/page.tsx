@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 export default function SchedulePage() {
   return (
     <>
-      <PageHeader title="Schedule" />
+      <PageHeader
+        title="Schedule"
+        subtitle="Our workshop is scheduled to take place on Friday, 7th of August 2026."
+      />
 
       <section>
         <div className="container-site">
