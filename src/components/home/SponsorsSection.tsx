@@ -9,6 +9,11 @@ interface Sponsor {
 
 const sponsors: Sponsor[] = [
   {
+    name: "Intron",
+    logo: "/assets/images/sponsors/intron.png",
+    href: "https://intron.io/",
+  },
+  {
     name: "Adaption Labs",
     logo: "/assets/images/sponsors/adaption-labs.png",
     href: "https://adaptionlabs.ai/",
