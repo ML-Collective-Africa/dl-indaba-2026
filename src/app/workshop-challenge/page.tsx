@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
+import { WORKSHOP_EVENT } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Workshop Challenge — Whose Intelligence?",
@@ -52,7 +53,7 @@ const submissions = [
 const timeline = [
   { date: "3rd August 2026", event: "Registration opens" },
   { date: "6th August 2026", event: "Submission deadline" },
-  { date: "7th August 2026", event: "Finalists announced at the workshop" },
+  { date: "7th August 2026", event: `Finalists announced at the workshop (${WORKSHOP_EVENT.location})` },
   { date: "Same day / later online", event: "Winner(s) announced" },
 ];
 
@@ -117,6 +118,19 @@ export default function WorkshopChallengePage() {
                   </li>
                 ))}
               </ol>
+              <p className="text-[15px] text-ink-2 leading-relaxed mt-5 max-w-none">
+                As a bonus tip, we are providing free adaptation labs credit to teams that may want to train/finetune
+                their own models for benchmarking against Intron&apos;s Sahara model. Kindly fill the form below to{" "}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeJegue2zPuDW-UJDqM6KnVAR3nXCHiuEITEAFGNHsKa6eqqQ/viewform?usp=publish-editor_"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-ink-2 underline underline-offset-2 hover:text-purple transition-colors"
+                >
+                  request for this credit
+                </a>
+                .
+              </p>
             </div>
 
             {/* Suggested Categories */}

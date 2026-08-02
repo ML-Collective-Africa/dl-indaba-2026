@@ -7,6 +7,7 @@ const glanceItems: { key: string; value: string; href?: string }[] = [
   { key: "Format", value: WORKSHOP_EVENT.format },
   { key: "Length", value: WORKSHOP_EVENT.length },
   { key: "Venue", value: WORKSHOP_EVENT.venue, href: "https://deeplearningindaba.com" },
+  { key: "Location", value: WORKSHOP_EVENT.location },
   { key: "Hosted by", value: WORKSHOP_EVENT.hostedBy },
   { key: "Workshop output", value: WORKSHOP_EVENT.output },
 ];
@@ -43,7 +44,7 @@ export function HeroSection() {
       </div>
 
       <div className="container-site mt-0 pb-0">
-        <div className="grid grid-cols-2 md:grid-cols-5 border-t border-b border-t-ink border-b-rule">
+        <div className="grid grid-cols-2 md:grid-cols-6 border-t border-b border-t-ink border-b-rule">
           {glanceItems.map((item) => (
             <div
               key={item.key}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/ui/PageHeader";
-import { SCHEDULE } from "@/lib/data";
+import { SCHEDULE, WORKSHOP_EVENT } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Schedule — Whose Intelligence?",
@@ -11,7 +11,7 @@ export default function SchedulePage() {
     <>
       <PageHeader
         title="Schedule"
-        subtitle="Our workshop is scheduled to take place on Friday, 7th of August 2026."
+        subtitle={`Our workshop is scheduled to take place on Friday, 7th of August 2026, at the ${WORKSHOP_EVENT.location}.`}
       />
 
       <section>
