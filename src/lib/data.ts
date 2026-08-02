@@ -51,10 +51,6 @@ export const SPEAKERS: Speaker[] = [
     image: "/assets/images/speakers/ayantala.jpeg",
     website: "https://www.globalcenter.ai/about/ayantola-alayande",
   },
-  {
-    name: "Sarah Luger",
-    affiliation: "Coming soon",
-  },
 ];
 
 export interface Person {
