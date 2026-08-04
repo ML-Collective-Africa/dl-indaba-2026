@@ -64,7 +64,7 @@ export interface Person {
 export interface PersonGroup {
   title: string;
   members: Person[];
-  columns?: 2 | 3;
+  columns?: 2 | 3 | 4;
   background?: boolean;
 }
 
@@ -96,7 +96,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
   },
   {
     title: "Organizers",
-    columns: 3,
+    columns: 4,
     background: true,
     members: [
       {
@@ -116,6 +116,11 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         affiliation: "Ashesi University · Google Research Africa · ML Collective",
         image: "/assets/images/organizers/prince.jpg",
         linkedin: "https://www.linkedin.com/in/prince-mireku-2a318b203/",
+      },
+      {
+        name: "Oluwatosin Olajide",
+        affiliation: "ML Engineer · ML Collective",
+        image: "/assets/images/organizers/tosin.png",
       },
     ],
   },

@@ -35,7 +35,9 @@ export default function OrganizersPage() {
                   className={`grid gap-12 lg:gap-x-8 lg:gap-y-12 ${
                     group.columns === 2
                       ? "grid-cols-1 sm:grid-cols-2 max-w-[720px] mx-auto"
-                      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                      : group.columns === 4
+                        ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+                        : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
                   }`}
                 >
                   {group.members.map((person) => (
