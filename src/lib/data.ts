@@ -40,10 +40,10 @@ export const SPEAKERS: Speaker[] = [
     linkedin: "https://www.linkedin.com/in/ayoodumak/",
   },
   {
-    name: "Chris Emezue",
-    affiliation: "LanAfrica Labs / Mila Quebec AI Institute",
-    image: "/assets/images/speakers/chris.png",
-    website: "https://chrisemezue.github.io/",
+    name: "Sarah Luger",
+    affiliation: "Co-chair, MLCommons Datasets Working Group.",
+    image: "/assets/images/speakers/sarah.jpg",
+    website: "https://www.sarahluger.com/",
   },
   {
     name: "Ayantola Alayande",
@@ -121,6 +121,7 @@ export const ORGANIZER_GROUPS: PersonGroup[] = [
         name: "Oluwatosin Olajide",
         affiliation: "ML Engineer · ML Collective",
         image: "/assets/images/organizers/tosin.png",
+        linkedin: "https://www.linkedin.com/in/olajidetosin/",
       },
     ],
   },
@@ -266,7 +267,7 @@ export const SCHEDULE: ScheduleItem[] = [
   {
     time: "12:15 – 1:00 pm",
     title: "Panelist Session — Whose Intelligence? Building Agentic AI in Africa without frontier model dependency",
-    note: "Panelists explore how agentic AI can be built for African realities without depending on frontier models, drawing on their areas of expertise. Panelists: Chinasa T. Okolo, Tobi Olatunji, Ayomide Odumankinde, Chris Emezue, and Ayantola Alayande.",
+    note: "Panelists explore how agentic AI can be built for African realities without depending on frontier models, drawing on their areas of expertise. Panelists: Chinasa T. Okolo, Tobi Olatunji, Ayomide Odumankinde, Sarah Luger, and Ayantola Alayande.",
   },
   {
     time: "1:00 – 1:20 pm",
