@@ -119,15 +119,32 @@ export default function WorkshopChallengePage() {
                 ))}
               </ol>
               <p className="text-[15px] text-ink-2 leading-relaxed mt-5 max-w-none">
-                As a bonus tip, we are providing free adaptation labs credit to teams that may want to train/finetune
-                their own models for benchmarking against Intron&apos;s Sahara model. Kindly fill the form below to{" "}
+                As a bonus tip, we are providing free Adaption labs credit to teams that may want to train/finetune.{" "}
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeJegue2zPuDW-UJDqM6KnVAR3nXCHiuEITEAFGNHsKa6eqqQ/viewform?usp=publish-editor_"
+                  href="https://docs.google.com/document/d/1zpirKSXELDbnj7hTfrRlqMIKRfhSL1EHcM9FP-3dorc/edit?tab=t.0"
                   target="_blank"
                   rel="noopener"
                   className="text-ink-2 underline underline-offset-2 hover:text-purple transition-colors"
                 >
-                  request for this credit
+                  Here
+                </a>{" "}
+                are some ideas on how to use the credit. You can check out{" "}
+                <a
+                  href="https://docs.adaptionlabs.ai/guides/adaptive-data/"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-ink-2 underline underline-offset-2 hover:text-purple transition-colors"
+                >
+                  Adaption&apos;s documentation
+                </a>
+                , or ask questions on{" "}
+                <a
+                  href="https://discord.gg/adaption"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-ink-2 underline underline-offset-2 hover:text-purple transition-colors"
+                >
+                  Adaption&apos;s discord
                 </a>
                 .
               </p>
