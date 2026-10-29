@@ -65,6 +65,51 @@ const judging = [
   { criteria: "Ethics, safety & inclusion", desc: "Consent, privacy, bias awareness, respect for user dignity." },
 ];
 
+const topWinners = [
+  {
+    place: "1st place",
+    prize: "$1,000",
+    team: "David Agentic AI Team",
+    project: "Sauti Ledger",
+    desc: "A privacy-first, voice-based ledger supporting multiple Nigerian languages. Traders can use it to record sales and expenses on-device. It included an excellent benchmarking report using examples to provide insights on model strengths and weaknesses.",
+  },
+  {
+    place: "2nd place",
+    prize: "$500",
+    team: "Sauti Yetu Team",
+    project: "Swahili-English healthcare triage",
+    desc: "A code-switched healthcare triage app for front-desk clinical officers seeing immigrant or refugee patients. It goes beyond typical ambient listening to provide a visual clinical reasoning graph, presents structured English data to the health worker, classifies the complaint, assigns urgency with red-flag escalation, routes to a department, auto-fills an intake card, and suggests clarifying questions. It also uses TTS to speak back to the patient in their local language, mitigating the impact of language barriers.",
+  },
+];
+
+const missionPrizes = [
+  {
+    category: "Education",
+    winner: "John Fiewor — GradrAI",
+    desc: "Empowers students who may reason and communicate better in local languages via code-switching to better understand questions and perform better on Computer-Based Tests, reducing the risk of their intelligence being overshadowed by a language barrier.",
+  },
+  {
+    category: "Agriculture",
+    winner: "Triumph team — SOAT Voice agent",
+    desc: "Uses code-switched voice to interact with physical agricultural irrigation systems and provide advisory details on soil pH, crop yields, and more.",
+  },
+  {
+    category: "Language Inclusion",
+    winner: "Jitimay Josué — Dawa Voice",
+    desc: "Found a way to build for Kirundi, a language spoken by 12 million people in Burundi that is unsupported by most AI systems.",
+  },
+  {
+    category: "Female-Led",
+    winner: "Emi",
+    desc: "A voice-based respiratory triage app with WHO-grounded urgency/triage labels that are automatically extracted and auto-populate downstream forms for community health worker follow-up.",
+  },
+  {
+    category: "User Experience",
+    winner: "PAYGO team — Koko AI",
+    desc: "A voice-based bookkeeping system that automatically adds/subtracts petty cash and tracks inventory, making bookkeeping fast, natural, and accessible during everyday business while ensuring financial data never leaves the device. It featured a better UX than the first-place solution but fell short on the thoroughness of the benchmark report.",
+  },
+];
+
 const resources = [
   "Access to Sahara v2.5 code-switching APIs across supported language pairs.",
   "Access to the AfriSwitch benchmark dataset with code-switching samples in 12 language pairs.",
@@ -82,6 +127,66 @@ export default function WorkshopChallengePage() {
       <section>
         <div className="container-site">
           <div className="max-w-[760px] mx-auto flex flex-col gap-14">
+            {/* Winners */}
+            <div>
+              <Eyebrow>Winners</Eyebrow>
+              <h2 className="font-sans font-semibold text-2xl mt-4 mb-6">Challenge Winners</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {topWinners.map((w, i) => {
+                  const first = i === 0;
+                  return (
+                    <div
+                      key={w.place}
+                      className={`relative overflow-hidden border p-8 ${
+                        first ? "border-purple/30 bg-purple-tint" : "border-rule bg-paper-2"
+                      }`}
+                    >
+                      <span
+                        className={`absolute left-0 top-0 h-full w-[4px] ${first ? "bg-purple" : "bg-rule-2"}`}
+                        aria-hidden
+                      />
+                      <p
+                        className={`text-[11px] tracking-[0.14em] uppercase font-semibold m-0 mb-4 ${
+                          first ? "text-purple-deep" : "text-muted"
+                        }`}
+                      >
+                        {w.place}
+                      </p>
+                      <p
+                        className={`font-serif text-[clamp(2.4rem,6vw,3.25rem)] m-0 mb-5 leading-none ${
+                          first ? "text-purple-deep" : "text-ink"
+                        }`}
+                      >
+                        {w.prize}
+                      </p>
+                      <p className="text-[16px] font-semibold text-ink m-0">{w.project}</p>
+                      <p className="text-[13px] text-muted m-0 mb-3">{w.team}</p>
+                      <p className="text-[14px] text-ink-2 leading-relaxed m-0 max-w-none">{w.desc}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <h3 className="font-sans font-semibold text-xl mt-10 mb-2">Mission Prizes</h3>
+              <p className="text-[15px] text-muted leading-relaxed mb-5 max-w-none">$100 each</p>
+              <ul className="list-none flex flex-col">
+                {missionPrizes.map((m) => (
+                  <li
+                    key={m.category}
+                    className="flex flex-col sm:flex-row gap-1 sm:gap-6 py-4 border-t border-rule last:border-b"
+                  >
+                    <span className="font-mono text-[11px] tracking-[0.08em] uppercase text-purple shrink-0 w-44 mt-[3px]">
+                      {m.category}
+                    </span>
+                    <span className="flex flex-col gap-1">
+                      <span className="text-[15px] font-medium text-ink">{m.winner}</span>
+                      <span className="text-[15px] text-muted leading-relaxed">{m.desc}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             {/* Overview */}
             <div>
               <Eyebrow>Overview</Eyebrow>
@@ -229,28 +334,6 @@ export default function WorkshopChallengePage() {
                 low-resource language coverage, offline/low-bandwidth readiness, and clear potential to continue into the
                 full Sahara CodeSwitch Africa Challenge.
               </p>
-            </div>
-
-            {/* Prizes */}
-            <div>
-              <Eyebrow>Prizes</Eyebrow>
-              <h2 className="font-sans font-semibold text-2xl mt-4 mb-6">Workshop Challenge Prize</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="relative overflow-hidden border border-purple/30 bg-purple-tint p-8">
-                  <span className="absolute left-0 top-0 h-full w-[4px] bg-purple" aria-hidden />
-                  <p className="text-[11px] tracking-[0.14em] uppercase text-purple-deep font-semibold m-0 mb-4">
-                    1st place · Winner
-                  </p>
-                  <p className="font-serif text-[clamp(2.4rem,6vw,3.25rem)] text-purple-deep m-0 leading-none">$1,200</p>
-                </div>
-                <div className="relative overflow-hidden border border-rule bg-paper-2 p-8">
-                  <span className="absolute left-0 top-0 h-full w-[4px] bg-rule-2" aria-hidden />
-                  <p className="text-[11px] tracking-[0.14em] uppercase text-muted font-semibold m-0 mb-4">
-                    2nd place · Runner-up
-                  </p>
-                  <p className="font-serif text-[clamp(2.4rem,6vw,3.25rem)] text-ink m-0 leading-none">$800</p>
-                </div>
-              </div>
             </div>
 
             {/* Resources */}
