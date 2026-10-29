@@ -68,14 +68,14 @@ const judging = [
 const topWinners = [
   {
     place: "1st place",
-    prize: "$1,000",
+    prize: "$1,200",
     team: "David Agentic AI Team",
     project: "Sauti Ledger",
     desc: "A privacy-first, voice-based ledger supporting multiple Nigerian languages. Traders can use it to record sales and expenses on-device. It included an excellent benchmarking report using examples to provide insights on model strengths and weaknesses.",
   },
   {
     place: "2nd place",
-    prize: "$500",
+    prize: "$800",
     team: "Sauti Yetu Team",
     project: "Swahili-English healthcare triage",
     desc: "A code-switched healthcare triage app for front-desk clinical officers seeing immigrant or refugee patients. It goes beyond typical ambient listening to provide a visual clinical reasoning graph, presents structured English data to the health worker, classifies the complaint, assigns urgency with red-flag escalation, routes to a department, auto-fills an intake card, and suggests clarifying questions. It also uses TTS to speak back to the patient in their local language, mitigating the impact of language barriers.",
